@@ -40,10 +40,13 @@ public class Box extends Rectangle {
     return super.computeArea() * this.depth;
   }
 
+  @Override
   public void displayDetail() {
+    System.out.println("==========Class Box===========");
     System.out.println("Depth: " + this.depth);
     System.out.println("Width: " + super.getWidth());
     System.out.println("Height: " + super.getHeight());
+    System.out.println("Height: " + this.computeVolume());
 
   }
 }
