@@ -33,6 +33,19 @@ public class Rectangle {
             this.height = Math.abs(height);
     }
 
+    public void setSize(double w, double h) {
+        if (w == 0 && h == 0) {
+            this.width = 1.0;
+            this.height = 1.0;
+        } else if (w >= 0 && h >= 0) {
+            this.width = w;
+            this.height = h;
+        } else {
+            this.width = Math.abs(w);
+            this.height = Math.abs(h);
+        }
+    }
+
     public double getWidth() {
         return this.width;
     }
