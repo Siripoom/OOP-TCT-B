@@ -35,4 +35,15 @@ public class Box extends Rectangle {
       this.depth = Math.abs(d);
     }
   }
+
+  public double computeVolume() {
+    return super.computeArea() * this.depth;
+  }
+
+  public void displayDetail() {
+    System.out.println("Depth: " + this.depth);
+    System.out.println("Width: " + super.getWidth());
+    System.out.println("Height: " + super.getHeight());
+
+  }
 }
