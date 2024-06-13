@@ -1,5 +1,5 @@
 public class Rectangle {
-    private double width;
+    private double width; // * property */
     private double height;
     String name;
 
@@ -9,20 +9,21 @@ public class Rectangle {
     }
 
     Rectangle(double width, double height) { // * Overloading constructor
-        this.width = 1.0;
-        this.height = 1.0;
+        this.width = width;
+        this.height = height;
     }
 
     Rectangle(double width, double height, String name) { // * Overloading constructor
-        this.width = 1.0;
-        this.height = 1.0;
+        this.width = width;
+        this.height = height;
+        this.name = name;
     }
 
     public void setWidth(double width) {
         if (width == 0)
             this.width = 1.0;
         else
-            this.width = Math.abs(width);
+            this.width = width * -1;
     }
 
     public void setHeight(double height) {
