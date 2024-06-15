@@ -40,7 +40,6 @@ public class Box extends Rectangle {
     return super.computeArea() * this.depth;
   }
 
-  @Override
   public void displayDetail() {
     System.out.println("==========Class Box===========");
     System.out.println("Depth: " + this.depth);
